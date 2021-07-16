@@ -1,0 +1,63 @@
+/* 
+    -------------MOTIVATION MESSAGE--------------
+*/
+
+.motivationMessage{
+    padding-bottom: 30px;
+    font-family: 'Yomogi', cursive;
+    font-size: 20px;
+}
+
+/* 
+    -------------BTN GET MOTIVATION MESSAGE--------------
+*/
+
+.BtnGetMotivation button::after{
+    content: "";
+    background-color: #5D576B;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: all 0.3s linear;
+
+}.BtnGetMotivation button:hover::after{
+    background-color: #44404d;
+    animation-name: btnJump;
+    animation-duration: 0.5s;
+}
+@keyframes btnJump {
+    10% {left: 15px;transform: rotate(5deg);}
+    50%{left: -15px;transform: rotate(-5deg);}
+    100%{left: 7px; transform: rotate(0deg);}
+}
+.BtnGetMotivation button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 0.9px;
+    word-spacing: 0.1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);   
+    z-index: 500;
+
+    transition: all 0.1s linear;
+
+}
+.BtnGetMotivation button:hover{
+    font-size: 17px;
+    letter-spacing: 1.3px;
+}
+
